@@ -1,0 +1,4 @@
+dist/
+node_modules/
+../2.db/**
+*.sql

@@ -1,0 +1,32 @@
+{
+  "source": {
+    "include": ["src"],
+    "includePattern": ".ts$",
+    "excludePattern": "(node_modules|dist)"
+  },
+  "opts": {
+    "destination": "./docs",
+    "recurse": true,
+    "template": "node_modules/better-docs"
+  },
+  "plugins": ["node_modules/better-docs/category", "node_modules/better-docs/typescript"],
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "templates": {
+    "better-docs": {
+      "name": "Documentación API NestJS",
+      "navigation": [
+        {
+          "label": "Módulos",
+          "children": [
+            { "label": "Controllers", "query": "category:Controllers" },
+            { "label": "Services", "query": "category:Services" },
+            { "label": "Guards", "query": "category:Guards" },
+            { "label": "DTOs", "query": "category:DTOs" }
+          ]
+        }
+      ]
+    }
+  }
+}
