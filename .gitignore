@@ -4,6 +4,7 @@
 /build
 /tmp
 /storage
+/src/environment
 
 # Logs
 logs
